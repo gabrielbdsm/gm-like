@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+
+}
+
+.root{
+    --fonte-1:  'Princesa Sofia', serif;
+    --fonte-2: "Josefin Slab", serif;
+    --fonte-acao: "Muli", serif;
+
+
+}
+html{
+    scroll-behavior: smooth;
+  }
+body{
+    
+    height: 100vh;
+}
+.sessao-login{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+.login-wrapper img{
+    
+    width: 50%;
+    height: 100vh;
+
+    background-size: cover;
+    position: absolute;
+    right: 0rem;
+}
+
+.login{
+    height: 100vh;
+    background-color:rgba(0, 178, 255, 1);
+    
+}
+
+form{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header-login h1{
+    font-size: 4rem;
+    font-family:'Fredericka, a Grande';
+    margin-bottom: 4rem;
+    font-weight: lighter;
+}
+.input-group{
+    position: relative;
+}
+.field{
+    
+    width: 20rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-family: var(--fonte-2);
+    border-radius: 0.5rem;
+    border: 0 none;
+    outline: 0; 
+    margin-bottom: .5rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.login-label{
+    
+    position: absolute;
+    font-size: 1rem;
+    font-family: var(--fonte-2);
+    text-transform: uppercase;
+    color: rgba(189, 187, 187, 1);
+    left: 7.5rem;
+    top: .5rem;
+   
+}
+
+.field:valid ~ label,.field:focus ~ label {
+    font-size: 0rem;
+    
+}
+
+#esquece{
+    color:rgb(4, 0, 255);
+    margin-left: 5rem;
+    font-family: var(--fonte-2);
+}
+#nconta{
+    color:rgb(4, 0, 255);
+    font-family: var(--fonte-2);
+    
+}
+#lembrar{
+    font-family: var(--fonte-2);
+}
+.btn{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.8rem 8rem 0.8rem 8rem;
+    cursor: pointer;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: var(--fonte-acao);
+}
+
+@media ( max-width: 749px ){
+    html{
+        font-size: 50%;
+    }
+    .login-wrapper img{
+        width: 45%;
+    }
+    form{
+        width: 55%;
+    }
+    form p{
+        font-size: 1.4rem;
+    }
+    .header-login h1{
+        font-size: 4.5rem;
+    }
+    .field{
+        font-size: 1.4rem;
+        padding: 0.2rem 0.7rem 0.3rem 0.7rem ;
+    }
+    .login-label{
+        font-size: 1.4rem;
+        top: .2rem;
+    }
+    #esquece{
+        margin-left: 2rem;
+        font-size: 1.4rem;
+    }
+    #lembrar{
+        font-size: 1.4rem;
+    }
+
+    #nconta{
+        font-size: 1.4rem;
+    }
+    .btn{
+        font-size: 1.4rem;
+    }
+
+}
